@@ -144,54 +144,27 @@
   <button class="btn btn-warning btn-lg" type="submit">A</button>
   <button class="btn btn-danger btn-lg" type="submit">R</button>
 </div>  
-<html>
-<head>
-  <!DOCTYPE html>
-  <html>
-  <head>
-      <title>Button Groups</title>
-  </head>
-  <body>
-      <div class="btn-toolbar" role="toolbar" aria-label="Button Toolbar">
-          <div class="btn-grp" role="group" aria-label="first Group">
-              <button class="btn btn-success btn-lg" type="submit">M</button>
-              <button class="btn btn-success btn-lg" type="submit">U</button>
-              <button class="btn btn-success btn-lg" type="submit">P</button>
-          </div>
-          <div class="btn-grp" role="group" aria-label="Second Group">
-              <button class="btn btn-warning btn-lg" type="submit">P</button>
-              <button class="btn btn-warning btn-lg" type="submit">A</button>
-          </div>
-          <div class="btn-grp" role="group" aria-label="third Group">
-              <button class="btn btn-danger btn-lg" type="submit">R</button>
-          </div>
+
+<h3 style="color: orangered;">GROUP OF BUTTONS</h3>
+<div class=" conatiner">
+  <div class=" btn-toolbar" role="toolbar" aria-label="Button Toolbar" >
+ 
+    <div class="btn-grp"role="group" aria-label=" first Group" >
+      <button class="btn btn-success btn-lg" type="submit">M</button>
+      <button class="btn btn-success btn-lg" type="submit">U</button>
+      <button class="btn btn-success btn-lg" type="submit">P</button>
       </div>
-  
-      <script>
-          // Step 1: Get the button toolbar element
-          const buttonToolbar = document.querySelector('.btn-toolbar');
-  
-          // Step 2: Get all button groups within the toolbar
-          const buttonGroups = buttonToolbar.querySelectorAll('.btn-grp');
-  
-          // Step 3: Loop through each button group
-          buttonGroups.forEach((group, index) => {
-              // Step 4: Get the buttons within each group
-              const buttons = group.querySelectorAll('button');
-  
-              
-              buttons.forEach((button, buttonIndex) => {
-                  console.log(`Button in Group ${index + 1}, Button ${buttonIndex + 1}: ${button.innerText}`);
-              });
-          });
-      </script>
-  </body>
-  </html>
-     
-
-
-
-
+      <div class="btn-grp"role="group" aria-label=" Second Group">
+        <button class="btn btn-warning btn-lg" type="submit">P</button>
+        <button class="btn btn-warning btn-lg" type="submit">A</button>
+      </div>
+      
+        
+        <div class="btn-grp"role="group" aria-label=" third Group">
+      <button class="btn btn-danger btn-lg" type="submit">R</button>
+    </div>
+</div>
+  </div>
     <br>
   <hr>
   <br>
